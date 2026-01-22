@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-9 col-lg-7">
+            <div class="card shadow-lg p-4">
+                <h2 class="mb-4 text-center fw-bold">Yazıyı Düzenle</h2>
+
+                <% if (typeof error !== 'undefined' && error) { %>
+                    <div class="alert alert-danger">
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form action="/edit/<%= post.id %>" method="POST">
+
+                    <!-- Başlık -->
+                    <div class="mb-3">
+                        <label for="title" class="form-label fw-bold">Yazı Başlığı</label>
+                        <input type="text" class="form-control form-control-lg" id="title" name="title"
+                            value="<%= post.title %>" required>
+                    </div>
+
+                    <div class="row">
+                        <!-- Kategori -->
+                        <div class="col-md-6 mb-3">
+                            <label for="category" class="form-label fw-bold">Kategori</label>
+                            <select class="form-select" id="category" name="category" required>
+                                <% const categories=['Teknoloji', 'Kariyer', 'Yaşam', 'Seyehat', 'Sağlık', 'Eğitim', 'İş', 'Diğer']; %>
+                                    <% categories.forEach(cat=> { %>
+                                        <option value="<%= cat %>" <%=post.category===cat ? 'selected' : '' %>><%= cat %></option>
+                                        <% }) %>
+                            </select>
+                        </div>
+
+                        <!-- Resim URL -->
+                        <div class="col-md-6 mb-3">
+                            <label for="image" class="form-label fw-bold">Kapak Resmi URL</label>
+                            <input type="url" class="form-control" id="image" name="image" value="<%= post.image %>">
+                        </div>
+                    </div>
+
+                    <!-- Özet -->
+                    <div class="mb-3">
+                        <label for="summary" class="form-label fw-bold">Kısa Özet</label>
+                        <input type="text" class="form-control" id="summary" name="summary" value="<%= post.summary %>">
+                    </div>
+
+                    <!-- İçerik -->
+                    <div class="mb-3">
+                        <label for="content" class="form-label fw-bold">İçerik</label>
+                        <textarea class="form-control" id="content" name="content" rows="8"
+                            required><%= post.content %></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-warning btn-lg text-white">Değişiklikleri Kaydet</button>
+                        <a href="/post/<%= post.id %>" class="btn btn-light text-muted">İptal</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

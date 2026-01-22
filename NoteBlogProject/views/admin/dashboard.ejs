@@ -1,0 +1,206 @@
+<%- include('../partials/header') %>
+
+    <div class="row">
+        <!-- SOL MENÜ -->
+        <div class="col-md-3 mb-4">
+            <div class="list-group shadow-sm">
+                <a href="/admin" class="list-group-item list-group-item-action active" aria-current="true">
+                    <i class="bi bi-speedometer2 me-2"></i> Yönetim Paneli
+                </a>
+                <a href="/" class="list-group-item list-group-item-action">
+                    <i class="bi bi-house me-2"></i> Siteye Dön
+                </a>
+                <a href="/create" class="list-group-item list-group-item-action">
+                    <i class="bi bi-pencil-square me-2"></i> Yeni Yazı Yaz
+                </a>
+                <a href="/logout" class="list-group-item list-group-item-action text-danger">
+                    <i class="bi bi-box-arrow-right me-2"></i> Çıkış Yap
+                </a>
+            </div>
+        </div>
+
+        <!-- SAĞ İÇERİK -->
+        <div class="col-md-9">
+
+            <!-- İSTATİSTİK KARTLARI -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="card bg-primary text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-file-text me-2"></i>Toplam Yazı</h5>
+                            <h2 class="fw-bold">
+                                <%= posts.length %>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-success text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-people me-2"></i>Toplam Kullanıcı</h5>
+                            <h2 class="fw-bold">
+                                <%= users.length %>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRAFİK BÖLÜMÜ (YENİ) -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">İçerik Dağılımı</h5>
+                    <div style="height: 300px;">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GELEN MESAJLAR (YENİ) -->
+            <h5 class="mb-3 fw-bold">Gelen Mesajlar (<%= messages ? messages.length : 0 %>)</h5>
+            <div class="table-responsive bg-white rounded shadow-sm mb-5">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Ad Soyad</th>
+                            <th>Konu</th>
+                            <th>Mesaj</th>
+                            <th>Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (messages && messages.length> 0) { %>
+                            <% messages.forEach(msg=> { %>
+                                <tr>
+                                    <td class="fw-bold">
+                                        <%= msg.name %> <br> <small class="text-muted fw-normal">
+                                                <%= msg.email %>
+                                            </small>
+                                    </td>
+                                    <td>
+                                        <%= msg.subject %>
+                                    </td>
+                                    <td class="text-truncate" style="max-width: 250px;">
+                                        <%= msg.message %>
+                                    </td>
+                                    <td class="small text-muted">
+                                        <%= new Date(msg.createdAt).toLocaleDateString() %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                                    <% } else { %>
+                                        <tr>
+                                            <td colspan="4" class="text-center text-muted">Henüz mesaj yok.</td>
+                                        </tr>
+                                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Chart.js Script -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                const posts = <% - JSON.stringify(posts) %>;
+
+                // Kategorileri Say
+                const categoryCounts = {};
+                posts.forEach(p => {
+                    categoryCounts[p.category] = (categoryCounts[p.category] || 0) + 1;
+                });
+
+                const ctx = document.getElementById('categoryChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(categoryCounts),
+                        datasets: [{
+                            label: 'Yazı Sayısı',
+                            data: Object.values(categoryCounts),
+                            backgroundColor: [
+                                '#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'
+                            ],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'right' }
+                        }
+                    }
+                });
+            </script>
+
+            <h5 class="mb-3 fw-bold">Kullanıcılar</h5>
+            <div class="table-responsive bg-white rounded shadow-sm mb-5">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Kullanıcı Adı</th>
+                            <th>Ad Soyad</th>
+                            <th>Rol</th>
+                            <th>Katılma Tarihi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% users.forEach(u=> { %>
+                            <tr>
+                                <td>@<%= u.username %>
+                                </td>
+                                <td>
+                                    <%= u.fullName %>
+                                </td>
+                                <td>
+                                    <% if(u.role==='admin' ) { %>
+                                        <span class="badge bg-danger">Admin</span>
+                                        <% } else { %>
+                                            <span class="badge bg-secondary">User</span>
+                                            <% } %>
+                                </td>
+                                <td class="small text-muted">
+                                    <%= new Date(u.createdAt).toLocaleDateString() %>
+                                </td>
+                            </tr>
+                            <% }) %>
+                    </tbody>
+                </table>
+            </div>
+
+            <h5 class="mb-3 fw-bold">Tüm Yazılar</h5>
+            <div class="table-responsive bg-white rounded shadow-sm">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Resim</th>
+                            <th scope="col">Başlık</th>
+                            <th scope="col">Yazar</th>
+                            <th scope="col" class="text-end">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% posts.forEach(post=> { %>
+                            <tr>
+                                <td><img src="<%= post.image %>" class="rounded"
+                                        style="width: 40px; height: 40px; object-fit: cover;"></td>
+                                <td class="fw-bold text-truncate" style="max-width: 200px;">
+                                    <%= post.title %>
+                                </td>
+                                <td><a href="/profile/<%= post.authorUsername %>" class="text-decoration-none">
+                                        <%= post.authorName || post.authorUsername %>
+                                    </a></td>
+                                <td class="text-end">
+                                    <a href="/edit/<%= post.id %>" class="btn btn-sm btn-outline-warning"><i
+                                            class="bi bi-pencil"></i></a>
+                                    <a href="/delete/<%= post.id %>" class="btn btn-sm btn-outline-danger"
+                                        onclick="return confirm('Sil?')"><i class="bi bi-trash"></i></a>
+                                </td>
+                            </tr>
+                            <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>

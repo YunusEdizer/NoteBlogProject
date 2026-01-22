@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-9 col-lg-7">
+            <div class="card shadow-lg p-4">
+                <h2 class="mb-4 text-center fw-bold">Yeni Yazı Oluştur</h2>
+
+                <% if (typeof error !== 'undefined' && error) { %>
+                    <div class="alert alert-danger">
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form action="/create" method="POST">
+
+                    <!-- Başlık -->
+                    <div class="mb-3">
+                        <label for="title" class="form-label fw-bold">Yazı Başlığı</label>
+                        <input type="text" class="form-control form-control-lg" id="title" name="title"
+                            placeholder="Etkileyici bir başlık girin..." required>
+                    </div>
+
+                    <div class="row">
+                        <!-- Kategori -->
+                        <!-- Kategori -->
+                        <div class="col-md-6 mb-3">
+                            <label for="category" class="form-label fw-bold">Kategori</label>
+                            <select class="form-select" id="category" name="category" required>
+                                <option value="">Kategori Seçin...</option>
+                                <option value="Teknoloji">Teknoloji</option>
+                                <option value="Kariyer">Kariyer</option>
+                                <option value="Yaşam">Yaşam</option>
+                                <option value="Seyehat">Seyehat</option>
+                                <option value="Sağlık">Sağlık</option>
+                                <option value="Eğitim">Eğitim</option>
+                                <option value="İş">İş</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </div>
+
+                        <!-- Resim URL -->
+                        <div class="col-md-6 mb-3">
+                            <label for="image" class="form-label fw-bold">Kapak Resmi URL</label>
+                            <input type="url" class="form-control" id="image" name="image" placeholder="https://...">
+                            <div class="form-text">Unsplash veya benzeri bir yerden link yapıştırın.</div>
+                        </div>
+                    </div>
+
+                    <!-- Özet -->
+                    <div class="mb-3">
+                        <label for="summary" class="form-label fw-bold">Kısa Özet</label>
+                        <input type="text" class="form-control" id="summary" name="summary"
+                            placeholder="Anasayfada görünecek kısa açıklama">
+                    </div>
+
+                    <!-- İçerik -->
+                    <div class="mb-3">
+                        <label for="content" class="form-label fw-bold">İçerik</label>
+                        <textarea class="form-control" id="content" name="content" rows="8" required
+                            placeholder="Burası senin sahnen... Dilediğin gibi yaz!."></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Yayınla</button>
+                        <a href="/" class="btn btn-light text-muted">İptal</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

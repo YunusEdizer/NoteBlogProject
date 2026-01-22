@@ -1,0 +1,198 @@
+<%- include('partials/header') %>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+            <!-- YAZI BAŞLIĞI VE META -->
+            <div class="text-center mb-4">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">
+                    <%= post.category %>
+                </span>
+                <h1 class="display-4 fw-bold mb-3">
+                    <%= escapeHtml(post.title) %>
+                </h1>
+
+                <div class="d-flex justify-content-center align-items-center text-muted flex-wrap gap-3">
+                    <!-- Yazar Linki -->
+                    <div class="d-flex align-items-center">
+                        <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-2"
+                            style="width: 24px; height: 24px; font-size: 0.7rem;">
+                            <%= (post.authorName || post.authorUsername || '?' ).charAt(0) %>
+                        </div>
+                        <a href="/profile/<%= post.authorUsername %>"
+                            class="text-decoration-none text-secondary fw-bold">
+                            <%= post.authorName || post.authorUsername %>
+                        </a>
+                    </div>
+
+                    <span class="d-none d-md-inline">•</span>
+
+                    <span>
+                        <%= new Date(post.createdAt).toLocaleDateString('tr-TR', { weekday: 'long' , year: 'numeric' ,
+                            month: 'long' , day: 'numeric' }) %>
+                    </span>
+
+                    <span class="d-none d-md-inline">•</span>
+
+                    <span title="Tahmini Okuma Süresi"><i class="bi bi-clock me-1"></i>
+                        <%= readingTime %> dk okuma
+                    </span>
+
+                    <span title="Görüntülenme"><i class="bi bi-eye me-1"></i>
+                        <%= post.views || 0 %> görüntülenme
+                    </span>
+                </div>
+            </div>
+
+            <!-- KAPAK RESMİ -->
+            <div class="mb-5 shadow-lg rounded overflow-hidden">
+                <img src="<%= post.image %>" class="img-fluid w-100" alt="<%= post.title %>"
+                    style="max-height: 500px; object-fit: cover;">
+            </div>
+
+            <!-- İÇERİK -->
+            <div class="post-content fs-5 lh-lg mb-5">
+                <%- post.content %>
+            </div>
+
+            <!-- SOSYAL ETKİLEŞİM ALANI (YENİ) -->
+            <div class="d-flex align-items-center gap-3 mb-5 py-3 border-top border-bottom">
+                <% const isLiked=locals.user && (post.likes || []).includes(locals.user.id); %>
+                    <% const isSaved=locals.user && (locals.user.savedPosts || []).includes(post.id); %>
+                        <form action="/like/<%= post.id %>" method="POST" class="mb-0">
+                            <button type="submit"
+                                class="btn btn-outline-danger rounded-pill px-4 <%= isLiked ? 'active' : '' %>"
+                                <%=!locals.user ? 'disabled' : '' %>>
+                                <i class="bi <%= isLiked ? 'bi-heart-fill' : 'bi-heart' %> me-1"></i>
+                                <%= (post.likes || []).length %> Beğeni
+                            </button>
+                        </form>
+                        <span class="text-muted"><i class="bi bi-chat-dots me-1"></i>
+                            <%= (post.comments || []).length %> Yorum
+                        </span>
+                        <% if (locals.user) { %>
+                            <form action="/<%= isSaved ? 'unsave' : 'save' %>/<%= post.id %>" method="POST"
+                                class="mb-0 ms-auto">
+                                <button type="submit" class="btn btn-outline-primary rounded-pill px-4">
+                                    <i class="bi <%= isSaved ? 'bi-bookmark-fill' : 'bi-bookmark' %> me-1"></i>
+                                    <%= isSaved ? 'Kaydedildi' : 'Kaydet' %>
+                                </button>
+                            </form>
+                            <% } %>
+            </div>
+
+            <!-- YORUMLAR -->
+            <div class="mb-5">
+                <h4 class="fw-bold mb-4">Yorumlar (<%= (post.comments || []).length %>)</h4>
+
+                <!-- Error Mesajı -->
+                <% if (req.query.error) { %>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <%= req.query.error %>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    <% } %>
+
+                        <!-- Yorum Yap Formu -->
+                        <% if (locals.user) { %>
+                            <div class="card mb-4 border-0 shadow-sm bg-light">
+                                <div class="card-body">
+                                    <form action="/comment/<%= post.id %>" method="POST">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Düşüncelerini Paylaş</label>
+                                            <textarea name="text" class="form-control" rows="3" required
+                                                placeholder="Bu yazı hakkında ne düşünüyorsun?"></textarea>
+                                        </div>
+                                        <div class="text-end">
+                                            <button type="submit" class="btn btn-primary px-4 rounded-pill">Yorum
+                                                Yap</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <% } else { %>
+                                <div class="alert alert-info">
+                                    Yorum yapmak için <a href="/login" class="fw-bold">giriş yapmalısınız</a>.
+                                </div>
+                                <% } %>
+
+                                    <!-- Yorum Listesi -->
+                                    <div class="comment-list">
+                                        <% if (!post.comments || post.comments.length===0) { %>
+                                            <p class="text-muted fst-italic">Henüz yorum yapılmamış. İlk yorumu sen yap!
+                                            </p>
+                                            <% } else { %>
+                                                <% post.comments.reverse().forEach(comment=> { %>
+                                                    <div class="d-flex mb-4">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                                                                style="width: 40px; height: 40px;">
+                                                                <%= comment.fullName.charAt(0) %>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h6 class="fw-bold mb-1">
+                                                                <%= comment.fullName %>
+                                                                    <small class="text-muted fw-normal ms-2"
+                                                                        style="font-size: 0.8rem;">
+                                                                        <%= new Date(comment.date).toLocaleDateString()
+                                                                            %>
+                                                                    </small>
+                                                            </h6>
+                                                            <p class="mb-0 text-break">
+                                                                <%= escapeHtml(comment.text) %>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <% }) %>
+                                                        <% } %>
+                                    </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- AKSİYON BUTONLARI -->
+            <div class="d-flex justify-content-between align-items-center bg-light p-4 rounded">
+                <div>
+                    <a href="/" class="btn btn-outline-secondary me-2">← Anasayfa</a>
+                    <% if (post.authorUsername) { %>
+                        <a href="/profile/<%= post.authorUsername %>" class="btn btn-outline-primary">Yazarın Profiline
+                            Git</a>
+                        <% } %>
+                </div>
+
+                <!-- Silme/Düzenleme Sadece Admin veya Sahibi İçin -->
+                <% if (locals.user && (locals.user.role==='admin' || locals.user.username===post.authorUsername)) { %>
+                    <div>
+                        <a href="/edit/<%= post.id %>" class="btn btn-warning me-2 text-white">Düzenle</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#deleteModal">
+                            Sil
+                        </button>
+                    </div>
+                    <% } %>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SİLME ONAY MODALI -->
+    <div class="modal fade" id="deleteModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Emin misiniz?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Bu yazıyı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <a href="/delete/<%= post.id %>" class="btn btn-danger">Evet, Sil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

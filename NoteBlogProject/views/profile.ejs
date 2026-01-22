@@ -1,0 +1,169 @@
+<%- include('partials/header') %>
+
+    <div class="row">
+        <!-- SOL KOLON: KULLANICI KARTI -->
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm border-0 text-center p-4">
+                <div class="mb-3 d-flex justify-content-center">
+                    <% if (profileUser.profileImage) { %>
+                        <img src="<%= profileUser.profileImage %>" class="rounded-circle shadow-sm"
+                            style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #fff;">
+                        <% } else { %>
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center display-4 fw-bold shadow-sm"
+                                style="width: 120px; height: 120px; border: 4px solid #fff;">
+                                <%= profileUser.fullName.charAt(0) %>
+                            </div>
+                            <% } %>
+                </div>
+
+                <h3 class="fw-bold mb-1">
+                    <%= profileUser.fullName %>
+                </h3>
+                <p class="text-muted mb-2">@<%= profileUser.username %>
+                        <% if (profileUser.role==='admin' ) { %>
+                            <span class="badge bg-danger ms-1" style="font-size: 0.7rem;">Admin</span>
+                            <% } %>
+                </p>
+
+                <!-- SOSYAL MEDYA LİNKLERİ -->
+                <% if (profileUser.social && (profileUser.social.github || profileUser.social.linkedin ||
+                    profileUser.social.website)) { %>
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                        <% if (profileUser.social.github) { %>
+                            <a href="<%= profileUser.social.github %>" target="_blank" class="text-secondary fs-5"><i
+                                    class="bi bi-github"></i></a>
+                            <% } %>
+                                <% if (profileUser.social.linkedin) { %>
+                                    <a href="<%= profileUser.social.linkedin %>" target="_blank"
+                                        class="text-primary fs-5"><i class="bi bi-linkedin"></i></a>
+                                    <% } %>
+                                        <% if (profileUser.social.website) { %>
+                                            <a href="<%= profileUser.social.website %>" target="_blank"
+                                                class="text-secondary fs-5"><i class="bi bi-globe"></i></a>
+                                            <% } %>
+                    </div>
+                    <% } %>
+
+                        <!-- İSTATİSTİKLER -->
+                        <div class="d-flex justify-content-center gap-4 mb-4">
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">
+                                    <%= (profileUser.followers || []).length %>
+                                </h5>
+                                <small class="text-muted">Takipçi</small>
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">
+                                    <%= (profileUser.following || []).length %>
+                                </h5>
+                                <small class="text-muted">Takip</small>
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">
+                                    <%= userPosts.length %>
+                                </h5>
+                                <small class="text-muted">Yazı</small>
+                            </div>
+                        </div>
+
+                        <!-- TAKİP ET / BIRAK BUTONU -->
+                        <% if (locals.user && locals.user.username !==profileUser.username) { %>
+                            <% const isFollowing=(locals.user.following || []).includes(profileUser.id); %>
+                                <form action="/<%= isFollowing ? 'unfollow' : 'follow' %>/<%= profileUser.id %>"
+                                    method="POST" class="mb-3">
+                                    <button type="submit"
+                                        class="btn <%= isFollowing ? 'btn-outline-danger' : 'btn-primary' %> w-100 rounded-pill">
+                                        <%= isFollowing ? 'Takibi Bırak' : 'Takip Et' %>
+                                    </button>
+                                </form>
+                                <% } %>
+
+                                    <% if (profileUser.role==='admin' ) { %>
+                                        <span class="badge bg-danger mb-3">Yönetici / Admin</span>
+                                        <% } else { %>
+                                            <span class="badge bg-secondary mb-3">Yazar</span>
+                                            <% } %>
+
+                                                <p class="text-body mt-2">
+                                                    <%= profileUser.bio || 'Henüz bir biyografi eklenmemiş.' %>
+                                                </p>
+
+                                                <hr>
+
+                                                <div class="d-flex flex-wrap justify-content-center gap-2">
+                                                    <% if (profileUser.skills && profileUser.skills.length> 0) { %>
+                                                        <% profileUser.skills.forEach(skill=> { %>
+                                                            <span class="badge bg-light text-primary border">
+                                                                <%= skill %>
+                                                            </span>
+                                                            <% }) %>
+                                                                <% } else { %>
+                                                                    <small class="text-muted">Yetenek
+                                                                        eklenmemiş.</small>
+                                                                    <% } %>
+                                                </div>
+            </div>
+        </div>
+
+        <!-- SAĞ KOLON: KULLANICININ YAZILARI -->
+        <div class="col-lg-8">
+            <h4 class="fw-bold mb-4">Yayınlanan Yazılar</h4>
+
+            <% if (userPosts.length===0) { %>
+                <div class="alert alert-light text-center py-5">
+                    <i class="bi bi-pencil-slash display-4 text-muted mb-3 d-block"></i>
+                    <p>Bu kullanıcı henüz hiç yazı yazmamış.</p>
+                    <% if (locals.user && locals.user.username===profileUser.username) { %>
+                        <a href="/create" class="btn btn-primary mt-2">İlk Yazını Yaz</a>
+                        <% } %>
+                </div>
+                <% } else { %>
+                    <div class="row g-4">
+                        <% userPosts.forEach(post=> { %>
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="<%= post.image %>" class="card-img-top"
+                                        style="height: 180px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span
+                                                class="badge bg-<%= getCategoryColor(post.category) %> text-white border-0">
+                                                <%= post.category %>
+                                            </span>
+                                            <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>
+                                                <%= (post.likes || []).length %>
+                                            </small>
+                                        </div>
+                                        <h5 class="card-title fw-bold text-truncate">
+                                            <%= escapeHtml(post.title) %>
+                                        </h5>
+                                        <p class="card-text small text-muted">
+                                            <%= escapeHtml(post.summary || '' ) %>
+                                        </p>
+
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <a href="/post/<%= post.id %>"
+                                                class="btn btn-sm btn-outline-primary">Oku</a>
+
+                                            <!-- Sadece Sahibi veya Admin Düzenleyebilir -->
+                                            <% if (locals.user && (locals.user.role==='admin' ||
+                                                locals.user.username===post.authorUsername)) { %>
+                                                <div>
+                                                    <a href="/edit/<%= post.id %>" class="text-warning me-2"><i
+                                                            class="bi bi-pencil-fill"></i></a>
+                                                    <a href="/delete/<%= post.id %>" class="text-danger"
+                                                        onclick="return confirm('Silmek istediğine emin misin?')"><i
+                                                            class="bi bi-trash-fill"></i></a>
+                                                </div>
+                                                <% } %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                    <% } %>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

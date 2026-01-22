@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+
+    <div class="row justify-content-center align-items-center" style="min-height: 60vh;">
+        <div class="col-md-5 col-lg-4">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <i class="bi bi-person-circle display-1 text-primary"></i>
+                        <h3 class="fw-bold mt-3">Giriş Yap</h3>
+                    </div>
+
+                    <% if (typeof success !=='undefined' && success) { %>
+                        <div class="alert alert-success text-center">
+                            <%= success %>
+                        </div>
+                        <% } %>
+
+                            <% if (error) { %>
+                                <div class="alert alert-danger text-center" role="alert">
+                                    <%= error %>
+                                </div>
+                                <% } %>
+
+                                    <form action="/login" method="POST">
+                                        <div class="mb-3">
+                                            <label for="username" class="form-label text-muted">Kullanıcı Adı</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-light"><i
+                                                        class="bi bi-person"></i></span>
+                                                <input type="text" class="form-control" id="username" name="username"
+                                                    placeholder="kullaniciadi" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="password" class="form-label text-muted">Şifre</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-light"><i class="bi bi-key"></i></span>
+                                                <input type="password" class="form-control" id="password"
+                                                    name="password" placeholder="****" required>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit"
+                                            class="btn btn-primary w-100 py-2 rounded-pill fw-bold">Giriş Yap</button>
+
+                                        <div class="text-center mt-3">
+                                            <small>Hesabın yok mu? <a href="/register"
+                                                    class="text-decoration-none fw-bold">Kayıt Ol</a></small>
+                                        </div>
+                                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

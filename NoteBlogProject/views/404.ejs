@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+    <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+
+        <h1 class="display-1 fw-bold text-primary" style="font-size: 8rem;">404</h1>
+        <h2 class="mb-4">Oops! Sayfa Bulunamadı.</h2>
+        <p class="lead text-muted mb-5" style="max-width: 600px;">
+            Aradığınız sayfayı bulamıyoruz. Silinmiş, taşınmış veya hiç var olmamış olabilir.
+            Merak etmeyin, hala bizimlesiniz!
+        </p>
+
+        <div class="d-flex gap-3">
+            <a href="/" class="btn btn-primary rounded-pill px-5 py-3 fw-bold">
+                <i class="bi bi-house-door-fill me-2"></i>Anasayfaya Dön
+            </a>
+            <a href="/contact" class="btn btn-outline-secondary rounded-pill px-5 py-3">
+                <i class="bi bi-envelope me-2"></i>Hata Bildir
+            </a>
+        </div>
+
+    </div>
+
+    <%- include('partials/footer') %>

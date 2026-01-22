@@ -1,0 +1,115 @@
+<%- include('partials/header') %>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow border-0">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0 fw-bold"><i class="bi bi-gear-fill me-2 text-primary"></i>Profil Ayarları</h4>
+                </div>
+                <div class="card-body p-4">
+
+                    <% if (error) { %>
+                        <div class="alert alert-danger">
+                            <%= error %>
+                        </div>
+                        <% } %>
+                            <% if (success) { %>
+                                <div class="alert alert-success">
+                                    <%= success %>
+                                </div>
+                                <% } %>
+
+                                    <form action="/settings" method="POST">
+
+                                        <!-- KİŞİSEL BİLGİLER -->
+                                        <h5 class="fw-bold mb-3 border-bottom pb-2">Kişisel Bilgiler</h5>
+
+                                        <div class="row g-3 mb-4">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Kullanıcı Adı</label>
+                                                <input type="text" class="form-control" value="<%= user.username %>"
+                                                    disabled readonly>
+                                                <div class="form-text">Kullanıcı adı değiştirilemez.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Email Adresi <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="email"
+                                                    value="<%= user.email || '' %>" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Ad Soyad <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" name="fullName"
+                                                    value="<%= user.fullName %>" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Profil Resmi URL</label>
+                                                <input type="url" class="form-control" name="profileImage"
+                                                    value="<%= user.profileImage || '' %>"
+                                                    placeholder="https://ornek.com/resim.jpg">
+                                                <div class="form-text">Profil resminizin doğrudan bağlantısını (URL)
+                                                    yapıştırın.</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Hakkımda</label>
+                                                <textarea class="form-control" name="bio"
+                                                    rows="4"><%= user.bio || '' %></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Yetenekler</label>
+                                                <input type="text" class="form-control" name="skills"
+                                                    value="<%= (user.skills || []).join(', ') %>"
+                                                    placeholder="Örn: Node.js, React, SQL (Virgülle ayırın)">
+                                            </div>
+                                        </div>
+
+                                        <!-- SOSYAL MEDYA -->
+                                        <h5 class="fw-bold mb-3 border-bottom pb-2">Sosyal Medya</h5>
+                                        <div class="row g-3 mb-4">
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-github"></i></span>
+                                                    <input type="text" class="form-control" name="github"
+                                                        value="<%= (user.social || {}).github || '' %>"
+                                                        placeholder="GitHub URL">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-linkedin"></i></span>
+                                                    <input type="text" class="form-control" name="linkedin"
+                                                        value="<%= (user.social || {}).linkedin || '' %>"
+                                                        placeholder="LinkedIn URL">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                                                    <input type="text" class="form-control" name="website"
+                                                        value="<%= (user.social || {}).website || '' %>"
+                                                        placeholder="Web Sitesi URL">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ŞİFRE DEĞİŞTİR -->
+                                        <h5 class="fw-bold mb-3 border-bottom pb-2">Güvenlik (İsteğe Bağlı)</h5>
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold">Yeni Şifre</label>
+                                            <input type="password" class="form-control" name="newPassword"
+                                                placeholder="Değiştirmek istemiyorsanız boş bırakın">
+                                        </div>
+
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-primary py-2 fw-bold">Değişiklikleri
+                                                Kaydet</button>
+                                        </div>
+
+                                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "admin-uuid",
+    "username": "yunusemre",
+    "password": "$2b$10$JH8tVQ9QkulGcyc57UpxN.QebsDUIBHAB2HQMMOOF5hHbJtPsVUTe",
+    "email": "edizeryunusemre@gmail.com",
+    "fullName": "Yunus Emre Edizer",
+    "role": "admin",
+    "bio": "NoteBlog Kurucusu ve Full Stack Geliştirici. Teknoloji tutkunu, gezgin ve yazar.",
+    "skills": [
+      "Node.js",
+      "Azure",
+      "Leadership",
+      "React"
+    ],
+    "profileImage": "",
+    "social": {
+      "github": "https://github.com/YunusEdizer",
+      "linkedin": "https://www.linkedin.com/in/edizeryunusemre",
+      "website": "https://yunusemreedizer.com"
+    },
+    "createdAt": "2026-01-22T07:49:45.015Z",
+    "followers": [
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "9e110313-6481-4c86-9d19-ec98ba780667",
+      "f81e8391-4bcd-4c11-ac23-b56974872fae"
+    ],
+    "following": [
+      "b14bd1ea-305c-4ed4-bd43-c993959fa020"
+    ],
+    "notifications": [
+      {
+        "id": "95e825ad-7159-466a-8aee-a39d5f5dad05",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/f721ce37-2f55-40ce-81db-526a7edf2af2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "58b63af5-4700-434d-954a-69f7455b1b84",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/f721ce37-2f55-40ce-81db-526a7edf2af2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "220f0e01-2eb3-4ab8-aaa9-11ff710580a7",
+        "type": "comment",
+        "message": "Emre Çelik yazına yorum yaptı.",
+        "link": "/post/af444500-02ec-4675-a74f-44751b6a7e3e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "c3801b67-de07-4f77-a2e7-c7306b07408e",
+        "type": "comment",
+        "message": "Mehmet Doğan yazına yorum yaptı.",
+        "link": "/post/af444500-02ec-4675-a74f-44751b6a7e3e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "74276959-0175-48ff-8f2c-94297710eec6",
+        "type": "comment",
+        "message": "Zeynep Aydın yazına yorum yaptı.",
+        "link": "/post/198de6f9-f357-4215-b47f-0615ef7518e3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "74a945ae-cff5-47cf-8eae-666291fec17b",
+        "type": "comment",
+        "message": "Ayşe Yılmaz yazına yorum yaptı.",
+        "link": "/post/198de6f9-f357-4215-b47f-0615ef7518e3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "8f81b075-bcaf-4134-8967-66305a9b9f2b",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/198de6f9-f357-4215-b47f-0615ef7518e3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "f5e990c2-939c-47e5-976c-68cab2a93e06",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/198de6f9-f357-4215-b47f-0615ef7518e3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "82b29f01-df51-4c3e-a04a-5b406013ae1a",
+        "type": "like",
+        "message": "Deniz Öztürk yazını beğendi.",
+        "link": "/post/198de6f9-f357-4215-b47f-0615ef7518e3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "b14bd1ea-305c-4ed4-bd43-c993959fa020",
+    "username": "denizaydın25",
+    "password": "$2b$10$cXHDMX2ZhKPEbwPocu7PEeLnopyQvaLlaxvt5bYzfirUFVBGGSWCq",
+    "email": "denizaydın25@example.com",
+    "fullName": "Deniz Aydın",
+    "role": "user",
+    "bio": "Deniz Aydın kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Deniz Aydın&background=random&size=200",
+    "social": {
+      "github": "https://github.com/denizaydın25",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.065Z",
+    "followers": [
+      "admin-uuid",
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "741260d6-0d01-42b7-ab3d-a5bb090d0c6b",
+      "ab7bc102-2f3f-4784-9525-571c0989e73b"
+    ],
+    "following": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8"
+    ],
+    "notifications": [
+      {
+        "id": "631b34e3-b494-49c5-87ae-9bd0981073f7",
+        "type": "comment",
+        "message": "Yunus Emre Edizer yazına yorum yaptı.",
+        "link": "/post/4bdf564e-6e36-4f3e-b6c2-fbcd3f88856e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "f213b1ec-ac86-4721-899b-02d4678f7bb2",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/4bdf564e-6e36-4f3e-b6c2-fbcd3f88856e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "f8cf63eb-f1b5-4752-b0f8-1b3da5716d5d",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/4bdf564e-6e36-4f3e-b6c2-fbcd3f88856e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "7cff9351-9a0f-4f5c-940f-465b3283b394",
+        "type": "like",
+        "message": "Emre Çelik yazını beğendi.",
+        "link": "/post/4bdf564e-6e36-4f3e-b6c2-fbcd3f88856e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "2027219a-9eae-4511-976a-cfcbac005cfe",
+        "type": "like",
+        "message": "Emre Demir yazını beğendi.",
+        "link": "/post/4bdf564e-6e36-4f3e-b6c2-fbcd3f88856e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "1db0370a-cf7d-4be4-8049-0b5d9aa91ab1",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/d87a5062-a62e-455e-a7c7-a7cca2634792",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "8f86a91e-c72c-423c-b490-3a908b1a14d1",
+        "type": "like",
+        "message": "Emre Demir yazını beğendi.",
+        "link": "/post/d87a5062-a62e-455e-a7c7-a7cca2634792",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "235ee924-a1f6-4c2c-952c-407e056971d6",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/d87a5062-a62e-455e-a7c7-a7cca2634792",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "4ff1b29f-2c0a-47cc-a1f8-eadff26ac937",
+        "type": "comment",
+        "message": "Selin Yılmaz yazına yorum yaptı.",
+        "link": "/post/9277fc9e-9062-4cbe-b98f-f8b9173e7816",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "8d8ff16c-d3b1-4a10-a2a9-0a3a2610665f",
+        "type": "comment",
+        "message": "Elif Kılıç yazına yorum yaptı.",
+        "link": "/post/9277fc9e-9062-4cbe-b98f-f8b9173e7816",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "64f373b2-cf7f-47d1-9744-744dc4bead20",
+        "type": "like",
+        "message": "Elif Kılıç yazını beğendi.",
+        "link": "/post/9277fc9e-9062-4cbe-b98f-f8b9173e7816",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "355e57c0-57c4-485d-bac7-eeb1ecfb4ea3",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/9277fc9e-9062-4cbe-b98f-f8b9173e7816",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "c5a6eca3-5a7d-486f-a498-13ab54f8fc40",
+        "type": "like",
+        "message": "Yunus Emre Edizer yazını beğendi.",
+        "link": "/post/9277fc9e-9062-4cbe-b98f-f8b9173e7816",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "0ebff721-2eb9-4948-936b-53f96295ca68",
+    "username": "mustafayılmaz58",
+    "password": "$2b$10$qR/NUoHCZc8BMbVPq8g32ehUts1DuXAQwt/rOi98X1Md073iXFxZi",
+    "email": "mustafayılmaz58@example.com",
+    "fullName": "Mustafa Yılmaz",
+    "role": "user",
+    "bio": "Mustafa Yılmaz kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Mustafa Yılmaz&background=random&size=200",
+    "social": {
+      "github": "https://github.com/mustafayılmaz58",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.115Z",
+    "followers": [
+      "9b9681e1-32e9-4ff8-bf78-551fb8dca363"
+    ],
+    "following": [
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217"
+    ],
+    "notifications": [
+      {
+        "id": "c88bbd88-0a3c-4e7c-ae8f-f80be39c9ab6",
+        "type": "like",
+        "message": "Mehmet Yıldız yazını beğendi.",
+        "link": "/post/53a9a67b-ca6e-4d0e-bd0b-7cce425f7946",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2180aa46-a236-4364-9d70-e82b9319e3da",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/53a9a67b-ca6e-4d0e-bd0b-7cce425f7946",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2e75fbe8-00e2-4443-83c5-40696736b4eb",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/53a9a67b-ca6e-4d0e-bd0b-7cce425f7946",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "aa644dcb-1766-4471-9293-14610072bc01",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/53a9a67b-ca6e-4d0e-bd0b-7cce425f7946",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+    "username": "emredemir27",
+    "password": "$2b$10$QVJQF1bNzNpSdRtMxa6c7Oe8rkEVI6HBDDNnZQ4iO8XiGLTBZ1XDu",
+    "email": "emredemir27@example.com",
+    "fullName": "Emre Demir",
+    "role": "user",
+    "bio": "Emre Demir kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Emre Demir&background=random&size=200",
+    "social": {
+      "github": "https://github.com/emredemir27",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.165Z",
+    "followers": [
+      "b14bd1ea-305c-4ed4-bd43-c993959fa020",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "ab7bc102-2f3f-4784-9525-571c0989e73b"
+    ],
+    "following": [
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+      "f81e8391-4bcd-4c11-ac23-b56974872fae"
+    ],
+    "notifications": [
+      {
+        "id": "81b982bb-aad7-4a68-be78-d64423f2bf8f",
+        "type": "comment",
+        "message": "Elif Kılıç yazına yorum yaptı.",
+        "link": "/post/4dbad70e-421d-4296-8dbd-578ae2685337",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "fbd48563-e20b-4882-8c23-5f17e07448a6",
+        "type": "comment",
+        "message": "Mehmet Öztürk yazına yorum yaptı.",
+        "link": "/post/4dbad70e-421d-4296-8dbd-578ae2685337",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "517ad12b-cc55-4d99-892b-e7e2756ae2e7",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/4dbad70e-421d-4296-8dbd-578ae2685337",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "19f22f20-ac6c-4d3f-9f95-105597638c77",
+        "type": "like",
+        "message": "Selin Yılmaz yazını beğendi.",
+        "link": "/post/4dbad70e-421d-4296-8dbd-578ae2685337",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2773c3fa-b888-4297-a9cb-0d9dbaff8f68",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/4dbad70e-421d-4296-8dbd-578ae2685337",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "ed271c70-8d2d-4038-b9dd-60266b3293af",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/8deb22c0-4eee-42ec-b139-92c02484a931",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "e8a56c48-4d59-4e00-b601-c95a902f9de1",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/8deb22c0-4eee-42ec-b139-92c02484a931",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "85339d0a-12a4-4b7a-bb41-1ec6ddafddac",
+        "type": "comment",
+        "message": "Mehmet Öztürk yazına yorum yaptı.",
+        "link": "/post/6ced405c-d87e-4620-b043-5fce392da0a2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "5105be6d-38e3-4291-b21c-296f82f77ad3",
+        "type": "comment",
+        "message": "Deniz Aydın yazına yorum yaptı.",
+        "link": "/post/6ced405c-d87e-4620-b043-5fce392da0a2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "43417f05-36ad-4509-a3f4-b2705651453d",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/6ced405c-d87e-4620-b043-5fce392da0a2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "7456a336-c03e-4c4e-92e3-4498a5392c3e",
+        "type": "like",
+        "message": "Emre Çelik yazını beğendi.",
+        "link": "/post/6ced405c-d87e-4620-b043-5fce392da0a2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "66b91b0e-a947-40a2-975f-eae81e64a49f",
+        "type": "like",
+        "message": "Mehmet Yıldız yazını beğendi.",
+        "link": "/post/6ced405c-d87e-4620-b043-5fce392da0a2",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "9b9681e1-32e9-4ff8-bf78-551fb8dca363",
+    "username": "elifkılıç82",
+    "password": "$2b$10$l9NC8k8vCsrTyH1qsE.JueXPBsszrruGYVCbvP45S5H.Ztri9D98e",
+    "email": "elifkılıç82@example.com",
+    "fullName": "Elif Kılıç",
+    "role": "user",
+    "bio": "Elif Kılıç kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Elif Kılıç&background=random&size=200",
+    "social": {
+      "github": "https://github.com/elifkılıç82",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.215Z",
+    "followers": [
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "184d8861-e504-4206-96c3-9a5b22df4b8f",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "following": [
+      "0ebff721-2eb9-4948-936b-53f96295ca68"
+    ],
+    "notifications": [
+      {
+        "id": "45fd491c-cc95-4ff7-bf90-6448f09ce79d",
+        "type": "like",
+        "message": "Selin Yılmaz yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2850b738-e194-4903-8210-b7e1e6462f61",
+        "type": "like",
+        "message": "Mustafa Yılmaz yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "b05df825-78c5-4e85-96ae-5fb5bb4a5b54",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "c874bc1c-a276-47c1-91bd-08cd885de301",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "1df60e2b-dc0a-4e54-bf67-f47103317c3b",
+        "type": "like",
+        "message": "Deniz Öztürk yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "8b85489b-36db-4597-8d95-12a2712547cb",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "e91f3cbc-e2f9-4e71-84ec-23ad0abbff0d",
+        "type": "like",
+        "message": "Yunus Emre Edizer yazını beğendi.",
+        "link": "/post/fb555b36-c779-4f0b-8632-f286046f7881",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+    "username": "emreçelik79",
+    "password": "$2b$10$HGCHc6WmLxnl0nKcjAGLt.bt7XJ4zqZVTWj2hpwFVxFDc95iSJfL2",
+    "email": "emreçelik79@example.com",
+    "fullName": "Emre Çelik",
+    "role": "user",
+    "bio": "Emre Çelik kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Emre Çelik&background=random&size=200",
+    "social": {
+      "github": "https://github.com/emreçelik79",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.266Z",
+    "followers": [
+      "0ebff721-2eb9-4948-936b-53f96295ca68",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "184d8861-e504-4206-96c3-9a5b22df4b8f"
+    ],
+    "following": [
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "admin-uuid",
+      "ab7bc102-2f3f-4784-9525-571c0989e73b",
+      "9b9681e1-32e9-4ff8-bf78-551fb8dca363"
+    ],
+    "notifications": [
+      {
+        "id": "8926ee46-bb16-4292-b8e1-cd47bcb51d55",
+        "type": "comment",
+        "message": "Yunus Emre Edizer yazına yorum yaptı.",
+        "link": "/post/8ae43a16-3fda-4c12-b58e-9f8934b99b0e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "512b03c8-0ade-4828-8148-46a9613ce3b9",
+        "type": "comment",
+        "message": "Emre Demir yazına yorum yaptı.",
+        "link": "/post/8ae43a16-3fda-4c12-b58e-9f8934b99b0e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "b30334ca-cc15-4d70-bcf2-2ee35e429edf",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/8ae43a16-3fda-4c12-b58e-9f8934b99b0e",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "c1ad5370-ac24-4194-b03d-02720a14d5e7",
+        "type": "comment",
+        "message": "Zeynep Aydın yazına yorum yaptı.",
+        "link": "/post/2f91184c-12fa-43de-9d0e-b3b366ed24c1",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "aa94e5eb-14b9-4027-977a-163a0893ba7d",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/2f91184c-12fa-43de-9d0e-b3b366ed24c1",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "46acfc73-00dc-4486-aae6-c81789b47842",
+        "type": "like",
+        "message": "Selin Yılmaz yazını beğendi.",
+        "link": "/post/2f91184c-12fa-43de-9d0e-b3b366ed24c1",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "043e68ae-01d8-4dcd-bdd3-6d9ab3a1e69b",
+        "type": "like",
+        "message": "Elif Kılıç yazını beğendi.",
+        "link": "/post/2f91184c-12fa-43de-9d0e-b3b366ed24c1",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "4555da61-9e06-469d-bf82-10d8d11b05e6",
+    "username": "candemir82",
+    "password": "$2b$10$bcBTHA5H/3vWjeMvek1FjelB28tuuCVK2dXIYdvYBkjgH.JHuhM2u",
+    "email": "candemir82@example.com",
+    "fullName": "Can Demir",
+    "role": "user",
+    "bio": "Can Demir kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Can Demir&background=random&size=200",
+    "social": {
+      "github": "https://github.com/candemir82",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.316Z",
+    "followers": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "9e110313-6481-4c86-9d19-ec98ba780667",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "following": [
+      "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+      "168611f1-bfc5-41c8-98b8-dca340a42386",
+      "741260d6-0d01-42b7-ab3d-a5bb090d0c6b",
+      "b14bd1ea-305c-4ed4-bd43-c993959fa020"
+    ],
+    "notifications": [
+      {
+        "id": "32a78fc5-1c66-43ca-9600-e21993ad969e",
+        "type": "like",
+        "message": "Mustafa Yılmaz yazını beğendi.",
+        "link": "/post/1c02724f-f146-4beb-8246-66f78166e062",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2b38afc7-c604-40db-945d-817f6ec8f813",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/1c02724f-f146-4beb-8246-66f78166e062",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "d0d5be05-137a-4061-afc3-92dcc6705e23",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/1c02724f-f146-4beb-8246-66f78166e062",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "1e096554-a60b-415b-960c-7b8a5bcb3066",
+        "type": "like",
+        "message": "Selin Yılmaz yazını beğendi.",
+        "link": "/post/1c02724f-f146-4beb-8246-66f78166e062",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "8e083dde-6152-423b-830b-03978b534543",
+    "username": "mehmetdoğan2",
+    "password": "$2b$10$Qu6JreUbD.JYUNYtqbbhb.WYBZ0E6ahNQrqYrLOaZxlxTEssP3P7e",
+    "email": "mehmetdoğan2@example.com",
+    "fullName": "Mehmet Doğan",
+    "role": "user",
+    "bio": "Mehmet Doğan kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Mehmet Doğan&background=random&size=200",
+    "social": {
+      "github": "https://github.com/mehmetdoğan2",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.366Z",
+    "followers": [
+      "ab7bc102-2f3f-4784-9525-571c0989e73b",
+      "184d8861-e504-4206-96c3-9a5b22df4b8f",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "following": [
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "ab7bc102-2f3f-4784-9525-571c0989e73b",
+      "4555da61-9e06-469d-bf82-10d8d11b05e6"
+    ],
+    "notifications": [
+      {
+        "id": "b94d1cd0-2752-411a-b024-675b70f8c7e5",
+        "type": "comment",
+        "message": "Yunus Emre Edizer yazına yorum yaptı.",
+        "link": "/post/410221ed-cf77-47e5-b055-c641ccdd3520",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "d5ba8ce6-9b76-4dc6-a150-8dcfda8d35d2",
+        "type": "like",
+        "message": "Deniz Öztürk yazını beğendi.",
+        "link": "/post/410221ed-cf77-47e5-b055-c641ccdd3520",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "82689605-3449-4ad5-a28d-cb2fb2e7f1d6",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/410221ed-cf77-47e5-b055-c641ccdd3520",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "cc882a49-ab84-425e-a621-d90072455206",
+        "type": "like",
+        "message": "Ahmet Kılıç yazını beğendi.",
+        "link": "/post/410221ed-cf77-47e5-b055-c641ccdd3520",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "5d461ec3-4dd1-4955-8435-9e85673d65f6",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/410221ed-cf77-47e5-b055-c641ccdd3520",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "6b7ab46d-e441-4a08-803c-5cfdacc375ec",
+        "type": "like",
+        "message": "Yunus Emre Edizer yazını beğendi.",
+        "link": "/post/8ec6cb35-80c0-4f26-a84e-083cdfc87c28",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "53ca1d59-1899-4a79-8dd0-6610ae8cead7",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/8ec6cb35-80c0-4f26-a84e-083cdfc87c28",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "9c3b6903-e9e8-4282-bf3a-21cc42d0bac6",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/8ec6cb35-80c0-4f26-a84e-083cdfc87c28",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+    "username": "ahmetkılıç83",
+    "password": "$2b$10$x72M9wrFkZtQim1x6NrvK.cWdqLPp5M3wUkmFuN8kLqW025P7ZQ4C",
+    "email": "ahmetkılıç83@example.com",
+    "fullName": "Ahmet Kılıç",
+    "role": "user",
+    "bio": "Ahmet Kılıç kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Ahmet Kılıç&background=random&size=200",
+    "social": {
+      "github": "https://github.com/ahmetkılıç83",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.415Z",
+    "followers": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "4555da61-9e06-469d-bf82-10d8d11b05e6"
+    ],
+    "following": [
+      "184d8861-e504-4206-96c3-9a5b22df4b8f",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "notifications": [
+      {
+        "id": "dface931-3ffb-4283-b9a0-1a5f9ca4da56",
+        "type": "comment",
+        "message": "Deniz Öztürk yazına yorum yaptı.",
+        "link": "/post/0641a0b1-1b03-464a-a076-62493a11fa31",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "4b47d6b2-5764-4883-9db0-a3a6ace95fc3",
+        "type": "comment",
+        "message": "Yunus Emre Edizer yazına yorum yaptı.",
+        "link": "/post/0641a0b1-1b03-464a-a076-62493a11fa31",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "d663f9cc-1bc3-42ba-8427-180590ef93fd",
+        "type": "comment",
+        "message": "Mehmet Öztürk yazına yorum yaptı.",
+        "link": "/post/0641a0b1-1b03-464a-a076-62493a11fa31",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "b4be5b17-7e76-4bfa-866e-acd192e4788e",
+        "type": "like",
+        "message": "Emre Çelik yazını beğendi.",
+        "link": "/post/0641a0b1-1b03-464a-a076-62493a11fa31",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "39a6cc9b-f369-4499-a3ef-4fbaeb9b627d",
+        "type": "like",
+        "message": "Deniz Öztürk yazını beğendi.",
+        "link": "/post/0641a0b1-1b03-464a-a076-62493a11fa31",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "0f025d2c-f0c8-4131-9ee8-a327329962f7",
+        "type": "comment",
+        "message": "Can Demir yazına yorum yaptı.",
+        "link": "/post/e02e308b-9b5a-4932-81f5-e72bb949643c",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "b8e8643d-460e-4968-99b1-a9d02a309b25",
+        "type": "comment",
+        "message": "Emre Demir yazına yorum yaptı.",
+        "link": "/post/e02e308b-9b5a-4932-81f5-e72bb949643c",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+    "username": "zeynepaydın55",
+    "password": "$2b$10$B1eMVjYTEdyN1dyfiqka3.RlWo/MRJHPVDgg0hW1UZ67dawWNzjdS",
+    "email": "zeynepaydın55@example.com",
+    "fullName": "Zeynep Aydın",
+    "role": "user",
+    "bio": "Zeynep Aydın kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Zeynep Aydın&background=random&size=200",
+    "social": {
+      "github": "https://github.com/zeynepaydın55",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.465Z",
+    "followers": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+      "9e110313-6481-4c86-9d19-ec98ba780667",
+      "741260d6-0d01-42b7-ab3d-a5bb090d0c6b",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "following": [
+      "9b9681e1-32e9-4ff8-bf78-551fb8dca363",
+      "admin-uuid",
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "4555da61-9e06-469d-bf82-10d8d11b05e6"
+    ],
+    "notifications": []
+  },
+  {
+    "id": "9e110313-6481-4c86-9d19-ec98ba780667",
+    "username": "mehmetöztürk26",
+    "password": "$2b$10$qr9iC3oRrrAmBgMXEjIEK.LA/SjuIiZuyXpECMB2Ih59VOZGPsZL.",
+    "email": "mehmetöztürk26@example.com",
+    "fullName": "Mehmet Öztürk",
+    "role": "user",
+    "bio": "Mehmet Öztürk kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Mehmet Öztürk&background=random&size=200",
+    "social": {
+      "github": "https://github.com/mehmetöztürk26",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.516Z",
+    "followers": [],
+    "following": [
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "ab7bc102-2f3f-4784-9525-571c0989e73b",
+      "admin-uuid",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622"
+    ],
+    "notifications": [
+      {
+        "id": "30a2e6b3-6b8c-4998-9948-d73ddc3db6ec",
+        "type": "comment",
+        "message": "Deniz Aydın yazına yorum yaptı.",
+        "link": "/post/cfbc8a85-a8e1-4289-b72c-2ea7804051d5",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "e6ddc60e-984c-455e-876d-34730bd585d9",
+        "type": "comment",
+        "message": "Ahmet Kılıç yazına yorum yaptı.",
+        "link": "/post/cfbc8a85-a8e1-4289-b72c-2ea7804051d5",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "b0e62d67-debf-47d3-a00f-a76008c66bb6",
+        "type": "comment",
+        "message": "Mehmet Yıldız yazına yorum yaptı.",
+        "link": "/post/cfbc8a85-a8e1-4289-b72c-2ea7804051d5",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "741260d6-0d01-42b7-ab3d-a5bb090d0c6b",
+    "username": "selinyılmaz58",
+    "password": "$2b$10$WpaC8AGTgPAq9QVrhCv1uO/1PEjHMstUPWeFYcvahSr4w6D7o3IvC",
+    "email": "selinyılmaz58@example.com",
+    "fullName": "Selin Yılmaz",
+    "role": "user",
+    "bio": "Selin Yılmaz kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Selin Yılmaz&background=random&size=200",
+    "social": {
+      "github": "https://github.com/selinyılmaz58",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.568Z",
+    "followers": [
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "184d8861-e504-4206-96c3-9a5b22df4b8f"
+    ],
+    "following": [
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622",
+      "b14bd1ea-305c-4ed4-bd43-c993959fa020",
+      "168611f1-bfc5-41c8-98b8-dca340a42386"
+    ],
+    "notifications": [
+      {
+        "id": "ed48aff3-aff5-4a2f-a078-244cf7871051",
+        "type": "comment",
+        "message": "Yunus Emre Edizer yazına yorum yaptı.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "1dbe6c2e-cc93-4411-8b6e-118c389e8d97",
+        "type": "comment",
+        "message": "Mustafa Yılmaz yazına yorum yaptı.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "18a3d3d4-cc7f-4d0e-8081-4aeeda032752",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "a3430628-6d56-47a8-9efa-513c868eb136",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "099214af-f573-415b-ae7c-f441d83752a7",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "7d321fe5-3f7c-4e82-beb0-4fb21f90820b",
+        "type": "like",
+        "message": "Elif Kılıç yazını beğendi.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "1ed8dc58-ea33-476e-b89c-34d9bae4b66f",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/8f2edeeb-bc66-49b2-a729-cc656a1649be",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "ab7bc102-2f3f-4784-9525-571c0989e73b",
+    "username": "denizaydın47",
+    "password": "$2b$10$U2dgJuhPnlZazRicaCtYA.n09BFAUBZsbf7n9RG3mw44YHyGUoKqS",
+    "email": "denizaydın47@example.com",
+    "fullName": "Deniz Aydın",
+    "role": "user",
+    "bio": "Deniz Aydın kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Deniz Aydın&background=random&size=200",
+    "social": {
+      "github": "https://github.com/denizaydın47",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.619Z",
+    "followers": [
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "9e110313-6481-4c86-9d19-ec98ba780667"
+    ],
+    "following": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "b14bd1ea-305c-4ed4-bd43-c993959fa020",
+      "8e083dde-6152-423b-830b-03978b534543"
+    ],
+    "notifications": [
+      {
+        "id": "e41a3163-b1ff-46e9-97d2-e4763f855b1e",
+        "type": "comment",
+        "message": "Can Demir yazına yorum yaptı.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "3e526be3-7fe4-4074-bde7-00fde77975a3",
+        "type": "comment",
+        "message": "Mehmet Öztürk yazına yorum yaptı.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "42ea2577-e158-4c32-9c81-71def0eee98d",
+        "type": "like",
+        "message": "Mehmet Yıldız yazını beğendi.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2d9a42f2-5830-4435-9075-c10c483a8e3d",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "f1016197-27e0-4abd-8483-d541e2f9e2a1",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "57f6e930-446a-4cf9-81c5-8c7f695ed77f",
+        "type": "like",
+        "message": "Mustafa Yılmaz yazını beğendi.",
+        "link": "/post/c373495b-fcec-4241-b58e-90583b0d80c3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "374e7e47-2551-471d-8209-5b5643c44d33",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/22dc5375-45b3-4585-a210-8020bbf7e2a4",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "23d0b1d1-a98b-4d3c-974f-416d7863c782",
+        "type": "like",
+        "message": "Mehmet Yıldız yazını beğendi.",
+        "link": "/post/22dc5375-45b3-4585-a210-8020bbf7e2a4",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "4cea3869-26fd-4e38-8b05-762ba05fd27d",
+        "type": "like",
+        "message": "Selin Yılmaz yazını beğendi.",
+        "link": "/post/22dc5375-45b3-4585-a210-8020bbf7e2a4",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "184d8861-e504-4206-96c3-9a5b22df4b8f",
+    "username": "ayşeyılmaz64",
+    "password": "$2b$10$1y1lpwKMuu3103c3qsqBB.ZXqyNy9/E9LS1RFPfLRYFShAfnbBONK",
+    "email": "ayşeyılmaz64@example.com",
+    "fullName": "Ayşe Yılmaz",
+    "role": "user",
+    "bio": "Ayşe Yılmaz kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Ayşe Yılmaz&background=random&size=200",
+    "social": {
+      "github": "https://github.com/ayşeyılmaz64",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.670Z",
+    "followers": [
+      "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+      "f81e8391-4bcd-4c11-ac23-b56974872fae"
+    ],
+    "following": [
+      "60736b04-0fcf-4d44-8b82-c1fb652cc217",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "f81e8391-4bcd-4c11-ac23-b56974872fae",
+      "741260d6-0d01-42b7-ab3d-a5bb090d0c6b",
+      "9b9681e1-32e9-4ff8-bf78-551fb8dca363"
+    ],
+    "notifications": []
+  },
+  {
+    "id": "168611f1-bfc5-41c8-98b8-dca340a42386",
+    "username": "mehmetyıldız61",
+    "password": "$2b$10$1m5xOyUw6Krp2ekNle8lP.gpULmpEPSS/tPd8oCLtkeAri8YYHLv6",
+    "email": "mehmetyıldız61@example.com",
+    "fullName": "Mehmet Yıldız",
+    "role": "user",
+    "bio": "Mehmet Yıldız kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Mehmet Yıldız&background=random&size=200",
+    "social": {
+      "github": "https://github.com/mehmetyıldız61",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.722Z",
+    "followers": [
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "c0cb5287-e823-4d99-bd35-0dd98f4fe3dd",
+      "741260d6-0d01-42b7-ab3d-a5bb090d0c6b"
+    ],
+    "following": [
+      "4555da61-9e06-469d-bf82-10d8d11b05e6",
+      "9b9681e1-32e9-4ff8-bf78-551fb8dca363",
+      "8e083dde-6152-423b-830b-03978b534543",
+      "186ff40d-a314-4ae5-b19c-4b1cfa7fa622"
+    ],
+    "notifications": [
+      {
+        "id": "a0a394c4-36f5-48b6-bdc4-5ed283a5a0d8",
+        "type": "like",
+        "message": "Mustafa Yılmaz yazını beğendi.",
+        "link": "/post/03a93188-57bc-47de-896e-196f2854d79b",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "a1f3644d-3add-4e6a-9c11-ae73147844ab",
+        "type": "like",
+        "message": "Ahmet Kılıç yazını beğendi.",
+        "link": "/post/03a93188-57bc-47de-896e-196f2854d79b",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "55062015-51f6-4f7f-a87c-ab8f30115152",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/03a93188-57bc-47de-896e-196f2854d79b",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "172c388a-2f7a-412e-bc24-0db62248ffb1",
+        "type": "like",
+        "message": "Elif Kılıç yazını beğendi.",
+        "link": "/post/10e9d1f5-b54b-4ad6-85be-0f461fe719a3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "7fe75e79-6b53-4178-a728-f5d5b5db6eff",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/10e9d1f5-b54b-4ad6-85be-0f461fe719a3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "e29b349c-6ccd-4f74-aa38-ed92eac999c6",
+        "type": "like",
+        "message": "Emre Demir yazını beğendi.",
+        "link": "/post/10e9d1f5-b54b-4ad6-85be-0f461fe719a3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "19eb860f-575b-4194-bf58-187c7d1e790a",
+        "type": "like",
+        "message": "Can Demir yazını beğendi.",
+        "link": "/post/10e9d1f5-b54b-4ad6-85be-0f461fe719a3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "c1f83b7d-536d-455b-8faa-891ece9e2dfb",
+        "type": "like",
+        "message": "Ahmet Kılıç yazını beğendi.",
+        "link": "/post/10e9d1f5-b54b-4ad6-85be-0f461fe719a3",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "0bd55c47-3b5b-4de7-aa4d-a470bb6a9e7c",
+        "type": "comment",
+        "message": "Mehmet Doğan yazına yorum yaptı.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "5c84df6e-5c2e-477a-b1e4-2d68fbfed8d2",
+        "type": "comment",
+        "message": "Mehmet Doğan yazına yorum yaptı.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "7f8a6843-259b-4d64-8022-09c72900170c",
+        "type": "like",
+        "message": "Ayşe Yılmaz yazını beğendi.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "bf2917eb-3d36-4f31-b716-3beb71c74001",
+        "type": "like",
+        "message": "Yunus Emre Edizer yazını beğendi.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "0d88750f-944a-44f5-9a0e-c8d614617685",
+        "type": "like",
+        "message": "Emre Demir yazını beğendi.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "41722db9-7c02-4a9d-9b86-3cdf6c23a8b1",
+        "type": "like",
+        "message": "Deniz Aydın yazını beğendi.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "93a4c07f-7772-41e8-a140-2d7b3ddd6838",
+        "type": "like",
+        "message": "Ahmet Kılıç yazını beğendi.",
+        "link": "/post/8ebd03fd-6234-4b50-b016-78c54cc856eb",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  },
+  {
+    "id": "f81e8391-4bcd-4c11-ac23-b56974872fae",
+    "username": "denizöztürk57",
+    "password": "$2b$10$jgrUN2Ip1ZTYdBIysO22OOMnxf7wPCt9f8glXJyknOfX/E7DIhkeq",
+    "email": "denizöztürk57@example.com",
+    "fullName": "Deniz Öztürk",
+    "role": "user",
+    "bio": "Deniz Öztürk kişisel blog sayfası. Web teknolojileri ve günlük yaşam üzerine yazıyorum.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "profileImage": "https://ui-avatars.com/api/?name=Deniz Öztürk&background=random&size=200",
+    "social": {
+      "github": "https://github.com/denizöztürk57",
+      "linkedin": "",
+      "website": ""
+    },
+    "createdAt": "2026-01-22T07:49:45.773Z",
+    "followers": [
+      "11352afa-6f13-4a2e-ab47-5e6446574ff8",
+      "184d8861-e504-4206-96c3-9a5b22df4b8f"
+    ],
+    "following": [
+      "184d8861-e504-4206-96c3-9a5b22df4b8f",
+      "admin-uuid"
+    ],
+    "notifications": [
+      {
+        "id": "250427d0-8fdc-4212-a9c7-6da336ebe682",
+        "type": "comment",
+        "message": "Ahmet Kılıç yazına yorum yaptı.",
+        "link": "/post/32f98cd3-6bcc-4c1f-b06e-805f7b794678",
+        "read": false,
+        "date": "2026-01-22T10:51:26.014Z"
+      },
+      {
+        "id": "4f59d83d-effe-430b-8f62-173680cf97c2",
+        "type": "like",
+        "message": "Ahmet Kılıç yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "fc876efa-0284-4453-93e4-51a7b512643f",
+        "type": "like",
+        "message": "Mehmet Öztürk yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "79f75acc-84b7-49dd-ba07-a1cf41d3c9db",
+        "type": "like",
+        "message": "Mehmet Doğan yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "36462513-de05-4c9b-9921-8eca7571b0c9",
+        "type": "like",
+        "message": "Zeynep Aydın yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "4b4f9685-212b-46dd-baae-1eda8e1959cc",
+        "type": "like",
+        "message": "Elif Kılıç yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "e24c5be4-4526-464b-8f5a-5deb0b0fab2d",
+        "type": "like",
+        "message": "Emre Demir yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      },
+      {
+        "id": "2c7877ec-6727-431f-9ffc-0920f6dfa4c8",
+        "type": "like",
+        "message": "Mustafa Yılmaz yazını beğendi.",
+        "link": "/post/d62979f1-7aeb-41bc-858a-ede9d935e353",
+        "read": false,
+        "date": "2026-01-22T10:51:26.013Z"
+      }
+    ]
+  }
+]

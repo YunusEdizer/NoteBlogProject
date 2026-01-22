@@ -1,0 +1,85 @@
+<%- include('partials/header') %>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <h3 class="fw-bold">Arama Sonuçları: "<span class="text-primary">
+                    <%= query %>
+                </span>"</h3>
+            <p class="text-muted">Toplam <%= users.length %> kullanıcı ve <%= posts.length %> yazı bulundu.</p>
+        </div>
+
+        <!-- KULLANICILAR -->
+        <% if (users.length> 0) { %>
+            <div class="col-12 mb-5">
+                <h5 class="fw-bold border-bottom pb-2 mb-3"><i class="bi bi-people me-2"></i>Kullanıcılar</h5>
+                <div class="row g-3">
+                    <% users.forEach(user=> { %>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm border-0 h-100">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3"
+                                        style="width: 50px; height: 50px; font-size: 1.2rem;">
+                                        <%= user.fullName.charAt(0) %>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0"><a href="/profile/<%= user.username %>"
+                                                class="text-decoration-none text-dark stretched-link">
+                                                <%= user.fullName %>
+                                            </a></h6>
+                                        <small class="text-muted">@<%= user.username %></small>
+                                        <div class="mt-1">
+                                            <% if (user.skills) { %>
+                                                <% user.skills.slice(0, 2).forEach(skill=> { %>
+                                                    <span class="badge bg-light text-secondary border"
+                                                        style="font-size: 0.6rem;">
+                                                        <%= skill %>
+                                                    </span>
+                                                    <% }) %>
+                                                        <% } %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+            <% } %>
+
+                <!-- YAZILAR -->
+                <div class="col-12">
+                    <h5 class="fw-bold border-bottom pb-2 mb-3"><i class="bi bi-file-text me-2"></i>Yazılar</h5>
+                    <% if (posts.length===0) { %>
+                        <div class="alert alert-warning">Aradığınız kriterlere uygun yazı bulunamadı.</div>
+                        <% } else { %>
+                            <div class="row g-4">
+                                <% posts.forEach(post=> { %>
+                                    <div class="col-md-6">
+                                        <div class="card h-100 shadow-sm">
+                                            <div class="row g-0 h-100">
+                                                <div class="col-4">
+                                                    <img src="<%= post.image %>" class="img-fluid rounded-start h-100"
+                                                        style="object-fit: cover;" alt="...">
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold">
+                                                            <%= escapeHtml(post.title) %>
+                                                        </h5>
+                                                        <p class="card-text small text-muted">
+                                                            <%= escapeHtml(post.summary || '') %>
+                                                        </p>
+                                                        <a href="/post/<%= post.id %>"
+                                                            class="btn btn-sm btn-outline-primary stretched-link">Oku</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+                            </div>
+                            <% } %>
+                </div>
+    </div>
+
+    <%- include('partials/footer') %>

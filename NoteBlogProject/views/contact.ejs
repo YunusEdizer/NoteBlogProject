@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div
+                            class="col-md-5 bg-primary text-white p-5 d-flex flex-column justify-content-center text-center">
+                            <i class="bi bi-envelope-paper display-1 mb-4"></i>
+                            <h3 class="fw-bold">Bize Ulaşın</h3>
+                            <p class="opacity-75">Sorularınız, önerileriniz veya işbirliği teklifleriniz için bize
+                                yazabilirsiniz.</p>
+                            <div class="mt-4">
+                                <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>İstanbul, Türkiye</p>
+                                <p class="mb-2"><i class="bi bi-envelope me-2"></i>info@noteblog.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 p-5">
+                            <h4 class="fw-bold mb-4">Mesaj Gönder</h4>
+
+                            <% if (locals.success) { %>
+                                <div class="alert alert-success">
+                                    <%= success %>
+                                </div>
+                                <% } %>
+                                    <% if (locals.error) { %>
+                                        <div class="alert alert-danger">
+                                            <%= error %>
+                                        </div>
+                                        <% } %>
+
+                                            <form action="/contact" method="POST">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted small fw-bold">AD SOYAD</label>
+                                                    <input type="text" name="name" class="form-control" required
+                                                        placeholder="Adınız Soyadınız">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted small fw-bold">E-POSTA</label>
+                                                    <input type="email" name="email" class="form-control" required
+                                                        placeholder="ornek@email.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted small fw-bold">KONU</label>
+                                                    <input type="text" name="subject" class="form-control" required
+                                                        placeholder="Mesajınızın konusu">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted small fw-bold">MESAJINIZ</label>
+                                                    <textarea name="message" class="form-control" rows="4" required
+                                                        placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary py-2 fw-bold">GÖNDER <i
+                                                            class="bi bi-send-fill ms-2"></i></button>
+                                                </div>
+                                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
